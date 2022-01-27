@@ -1,0 +1,28 @@
+.button-list {
+  width: 730px;
+  margin: 0 auto;
+}
+
+.button-list__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-list__text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  width: 65px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
+.button-list__button {
+  width: 189px;
+  height: 48px;
+}
