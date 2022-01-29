@@ -1,4 +1,8 @@
+@import './normalize.css';
 @import '../fonts/fonts.css';
+@import '../../components/header.css';
+@import '../../components/main-content.css';
+@import '../../components/footer.css';
 
 :root {
     --white: #ffffff;
@@ -24,6 +28,25 @@
     --secondary-hover: var(--purple-1);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+/*Глобальные стили*/
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
 }
+
+.page, 
+.content {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 1 auto;
+}
+
+
