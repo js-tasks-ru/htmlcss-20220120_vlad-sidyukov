@@ -1,0 +1,13 @@
+.accorduon-list {
+  width: 730px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.accordion-list__item {
+  margin-bottom: 8px;
+}
+
+.accordion-list__item:last-child {
+  margin-bottom: 0;
+}
