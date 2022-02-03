@@ -53,5 +53,4 @@
 
 .histogram__schedule-item > svg{
   fill: var(--blue);
-  box-sizing: border-box;
 }
