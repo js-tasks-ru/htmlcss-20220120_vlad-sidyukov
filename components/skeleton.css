@@ -4,6 +4,11 @@
   border-radius: 8px;
 }
 
+.skeleton--preview {
+  width: 100%;
+  max-width: 600px;
+}
+
 .skeleton__line {
   height: 20px;
   background: var(--grey-gradient)

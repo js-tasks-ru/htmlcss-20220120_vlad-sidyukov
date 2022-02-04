@@ -11,6 +11,11 @@
   padding: 15px 15px 14px;
 }
 
+.button--preview {
+  width: 100%;
+  max-width: 250px;
+}
+
 .button--disabled,
 .button:disabled {
   opacity: 0.5;
