@@ -1,0 +1,36 @@
+.card {
+  padding: 36px 24px;
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px var(--box-shadow);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__component {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--black);
+}
+
+.card__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--black);
+}

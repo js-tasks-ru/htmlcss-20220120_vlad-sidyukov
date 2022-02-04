@@ -3,6 +3,12 @@
 @import '../../components/header.css';
 @import '../../components/main-content.css';
 @import '../../components/footer.css';
+@import '../../components/accordion.css';
+@import '../../components/button.css';
+@import '../../components/preview.css';
+@import '../../components/skeleton.css';
+@import '../../components/tooltip.css';
+@import '../../components/card.css';
 
 :root {
     --white: #ffffff;
@@ -35,7 +41,8 @@
 /*Глобальные стили*/
 
 .container {
-  max-width: 1120px;
+  max-width: 1140px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
