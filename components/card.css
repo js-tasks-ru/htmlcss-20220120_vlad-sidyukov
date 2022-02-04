@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 24px;
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px var(--box-shadow);
+  border-radius: 12px;
+}
+
+.card__component {
+  margin: auto auto;
+}
+
+.card__tooltip {
+}
+
+.card__skeleton {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card__accordion {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card__button {
+  width: 100%;
+  max-width: 250px;
+}
+
+.card__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--black);
+}
+
+.card__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--black);
+}
