@@ -9,6 +9,9 @@
 @import '../../components/skeleton.css';
 @import '../../components/tooltip.css';
 @import '../../components/card.css';
+@import '../../components/components.css';
+@import '../../components/footer-components.css';
+@import '../../components/header-components.css';
 
 :root {
     --white: #ffffff;
@@ -23,6 +26,9 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
+
+    --grey-background: var(--grey-5);
     
     --box-shadow: rgba(33, 36, 41, 0.05);
 
