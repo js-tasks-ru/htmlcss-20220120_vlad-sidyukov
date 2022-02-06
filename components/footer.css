@@ -3,6 +3,12 @@
   padding-bottom: 136px;
 }
 
+@media (max-width: 400px) {
+  .footer {
+    display: none;
+  }  
+}
+
 .footer__title {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -25,3 +31,4 @@
   max-width: 640px;
   margin: 0 auto;
 }
+

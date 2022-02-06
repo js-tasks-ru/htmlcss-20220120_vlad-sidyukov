@@ -1,7 +1,27 @@
 .header {
-  padding-top: 96px;
+  padding-top: 24px;
   padding-bottom: 77px;
 }
+
+@media (max-width: 400px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 69px;
+  }
+}
+
+
+.header__img {
+  width: 110px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 400px) {
+  .header__img {
+    margin: 0 auto 48px;
+  }
+}
+
 
 .header__title {
   font-family: 'Inter', sans-serif;
@@ -10,4 +30,12 @@
   font-size: 50px;
   line-height: 64px;
   color: #212429;
+}
+
+@media (max-width: 400px) {
+  .header__title {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
