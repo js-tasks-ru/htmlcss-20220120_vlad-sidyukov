@@ -1,0 +1,8 @@
+.content {
+  padding: 40px;
+}
+
+.content__calendar {
+  width: 40%;
+  min-width: 300px;
+}
