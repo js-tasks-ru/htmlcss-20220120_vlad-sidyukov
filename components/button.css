@@ -23,11 +23,6 @@
     line-height: 15px;
     height: auto;
     padding: 8px 8px 7px;
-  }
-}
-
-@media (max-width: 400px) {
-  .button--preview {
     max-width: 120px;
   }
 }
