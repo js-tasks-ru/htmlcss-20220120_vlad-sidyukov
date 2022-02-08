@@ -12,18 +12,18 @@
   white-space: nowrap;
 }
 
+.button--preview {
+  width: 100%;
+  max-width: 250px;
+}
+
 @media (max-width: 400px) {
-  .button--preview.button {
+  .button--preview {
     font-size: 12px;
     line-height: 15px;
     height: auto;
     padding: 8px 8px 7px;
   }
-}
-
-.button--preview {
-  width: 100%;
-  max-width: 250px;
 }
 
 @media (max-width: 400px) {

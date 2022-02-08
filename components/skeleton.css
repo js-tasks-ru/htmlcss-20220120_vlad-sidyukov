@@ -4,15 +4,15 @@
   border-radius: 8px;
 }
 
-@media (max-width: 400px) {
-  .skeleton--preview.skeleton {
-    padding: 12px 20px 16px 12px;
-  }
-}
-
 .skeleton--preview {
   width: 100%;
   max-width: 600px;
+}
+
+@media (max-width: 400px) {
+  .skeleton--preview {
+    padding: 12px 20px 16px 12px;
+  }
 }
 
 .skeleton__line {
