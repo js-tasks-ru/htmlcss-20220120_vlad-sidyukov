@@ -12,6 +12,7 @@
 @import '../../components/components.css';
 @import '../../components/footer-components.css';
 @import '../../components/header-components.css';
+@import '../../components/histogram.css';
 
 :root {
   --white: #ffffff;
@@ -52,6 +53,7 @@
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 375px;
 }
 
 .page, 
