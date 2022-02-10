@@ -1,12 +1,16 @@
 .histogram {
+  width: 100%;
   padding: 16px 24px 24px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
 }
 
 .histogram--preview {
-  width: 100%;
   max-width: 600px;
+}
+
+.histogram--component {
+  max-width: 500px;
 }
 
 @media (max-width: 400px) {

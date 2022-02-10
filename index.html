@@ -11,17 +11,9 @@
 
   <header class="header">
     <div class="container">
-      <div class="header__img">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="30" height="30" fill="#212429" />
-        </svg>
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="16" fill="#212429" />
-        </svg>
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0L32 32H0V0Z" fill="#212429" />
-        </svg>
-      </div>
+      <svg class="header__icon">
+        <use href="../assets/icons/sprite.svg#header-icon">
+      </svg>
       <h1 class="header__title">
         Reusable component library
       </h1>
@@ -132,9 +124,10 @@
               </div>
             </div>
           </div>
-          <p class="card__title">Skeleton</p>
+          <p class="card__title">Histogram</p>
           <p class="card__subtitle">Container</p>
         </div>
+
       </section>
     </div>
   </main>

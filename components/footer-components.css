@@ -3,6 +3,12 @@
   background-color: var(--grey-6);
 }
 
+@media (max-width: 600px) {
+  .footer-components {
+    display: none;
+  }  
+}
+
 .footer-components__title {
   font-family: 'Inter', sans-serif;
   font-style: normal;
