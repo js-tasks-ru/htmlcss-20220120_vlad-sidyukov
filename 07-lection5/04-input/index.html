@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./wrapper.css">
+  <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <label class="input-text">
+      <div class="input-text__wrapper">
+        <input class="input-text__input" type="text" placeholder="Placeholder">
+        <span class="input-text__icon"></span>
+      </div>
+      <span class="input__label">Label</span>
+    </label>
+    <label class="input-text input-text--success">
+      <div class="input-text__wrapper">
+        <input class="input-text__input" type="text" value="Success">
+        <span class="input-text__icon"></span>
+      </div>
+      <span class="input__label">Success</span>
+    </label>
+    <label class="input-text input-text--error">
+      <div class="input-text__wrapper">
+        <input class="input-text__input" type="text" value="Error">
+        <span class="input-text__icon"></span>
+      </div>
+      <span class="input__label">Error</span>
+    </label>
+    <label class="input-text">
+      <div class="input-text__wrapper">
+        <input class="input-text__input" type="text" value="Disabled" disabled>
+        <span class="input-text__icon"></span>
+      </div>
+      <span class="input__label">Disabled</span>
+    </label>
+  </div>
+
+</body>
+
 </html>
