@@ -3,9 +3,21 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./wrapper.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
-
+    <body class="wrapper">
+      <label class="checkbox">
+        <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+        <span class="checkbox__label">Default</span>
+      </label>
+      <label class="checkbox">
+        <input class="checkbox__input visually-hidden" type="checkbox" name="not" checked>
+        <span class="checkbox__label">Checked</span>
+      </label>
+      <label class="checkbox">
+        <input class="checkbox__input visually-hidden" type="checkbox" name="not" disabled>
+        <span class="checkbox__label">Disabled</span>
+      </label>
     </body>
 </html>
