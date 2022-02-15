@@ -33,6 +33,8 @@
   --grey-6: #F9FAFC;
   
   --box-shadow: rgba(33, 36, 41, 0.05);
+  --box-shadow-1: rgba(240, 61, 62, 0.1);
+  --box-shadow-2: rgba(51, 154, 240, 0.1);
 
   --grey-gradient: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 
