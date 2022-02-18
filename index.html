@@ -21,114 +21,419 @@
   </header>
 
   <main class="main-content">
-    <div class="container">
-      <section class="preview">
-        <div class="preview__card card">
-          <div class="card__component">
-            <div class="skeleton skeleton--preview">
-              <div class="skeleton__inner">
-                <div class="skeleton__avatar">
-                </div>
-                <div class="skeleton__info">
-                  <div class="skeleton__line skeleton__line--name"></div>
-                  <div class="skeleton__line skeleton__line--subname"></div>
-                </div>
-              </div>
-              <div class="skeleton__line skeleton__line--text"></div>
-              <div class="skeleton__line skeleton__line--text"></div>
-            </div>
-          </div>
-          <p class="card__title">Skeleton</p>
-          <p class="card__subtitle">Container</p>
-        </div>
-        <div class="preview__card card">
-          <div class="card__component">
-            <button class="button button--primary button--preview">Кнопка</button>
-          </div>
-          <p class="card__title">Button</p>
-          <p class="card__subtitle">Container</p>
-        </div>
-        <div class="preview__card card">
-          <div class="card__component">
-            <div class="tooltip">
-              <svg class="tooltip__icon">
-                <use href="./assets/icons/sprite.svg#tooltip-icon">
-              </svg>
-              <div class="tooltip__bubble">
-                Helper Text
-              </div>
-            </div>
-          </div>
-          <p class="card__title">Tooltip</p>
-          <p class="card__subtitle">Container</p>
-        </div>
-        <div class="preview__card card">
-          <div class="card__component">
-            <div class="accordion accordion--preview">
-              <details class="accordion__item">
-                <summary class="accordion__title">
-                  Accordion item 1
-                </summary>
-                <p class="accordion__text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-                  enim
-                  velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
-              </details>
-            </div>
-          </div>
-          <p class="card__title">Accordion</p>
-          <p class="card__subtitle">Container</p>
-        </div>
-        <div class="preview__card card">
-          <div class="card__component">
-            <div class="histogram histogram--preview">
-              <div class="histogram__inner">
-                <div class="histogram__orders">
-                  <p class="histogram__orders-title">Total orders</p>
-                  <p class="histogram__number">50254</p>
-                </div>
-                <a class="histogram__link" href="#">View all</a>
-              </div>
-              <div class="histogram__schedule">
-                <div class="histogram__schedule-item" style="height: 66%"></div>
-                <div class="histogram__schedule-item" style="height: 100%"></div>
-                <div class="histogram__schedule-item" style="height: 30%"></div>
-                <div class="histogram__schedule-item" style="height: 50%"></div>
-                <div class="histogram__schedule-item" style="height: 90%"></div>
-                <div class="histogram__schedule-item" style="height: 15%"></div>
-                <div class="histogram__schedule-item" style="height: 66%"></div>
-                <div class="histogram__schedule-item" style="height: 100%"></div>
-                <div class="histogram__schedule-item" style="height: 30%"></div>
-                <div class="histogram__schedule-item" style="height: 50%"></div>
-                <div class="histogram__schedule-item" style="height: 90%"></div>
-                <div class="histogram__schedule-item" style="height: 15%"></div>
-                <div class="histogram__schedule-item" style="height: 66%"></div>
-                <div class="histogram__schedule-item" style="height: 100%"></div>
-                <div class="histogram__schedule-item" style="height: 30%"></div>
-                <div class="histogram__schedule-item" style="height: 50%"></div>
-                <div class="histogram__schedule-item" style="height: 90%"></div>
-                <div class="histogram__schedule-item" style="height: 15%"></div>
-                <div class="histogram__schedule-item" style="height: 66%"></div>
-                <div class="histogram__schedule-item" style="height: 100%"></div>
-                <div class="histogram__schedule-item" style="height: 30%"></div>
-                <div class="histogram__schedule-item" style="height: 50%"></div>
-                <div class="histogram__schedule-item" style="height: 90%"></div>
-                <div class="histogram__schedule-item" style="height: 15%"></div>
-                <div class="histogram__schedule-item" style="height: 66%"></div>
-                <div class="histogram__schedule-item" style="height: 100%"></div>
-                <div class="histogram__schedule-item" style="height: 30%"></div>
-                <div class="histogram__schedule-item" style="height: 50%"></div>
-                <div class="histogram__schedule-item" style="height: 90%"></div>
-                <div class="histogram__schedule-item" style="height: 15%"></div>
-              </div>
-            </div>
-          </div>
-          <p class="card__title">Histogram</p>
-          <p class="card__subtitle">Container</p>
-        </div>
+    <div class="tabs">
+      <input class="tabs__input tabs__input--all visually-hidden" type="radio" id="#all-tab" name="tabs" checked>
+      <input class="tabs__input tabs__input--complex visually-hidden" type="radio" id="#complex-tab" name="tabs">
+      <input class="tabs__input tabs__input--simple visually-hidden" type="radio" id="#simple-tab" name="tabs">
 
-      </section>
+      <div class="tabs__scroller">
+        <div class="container">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <label class="tabs__label tabs__label--all" for="#all-tab">All components</label>
+            </li>
+            <li class="tabs__item">
+              <label class="tabs__label tabs__label--complex" for="#complex-tab">Complex</label>
+            </li>
+            <li class="tabs__item">
+              <label class="tabs__label tabs__label--simple" for="#simple-tab">Simple</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabs__content tabs__content--all">
+        <section class="preview">
+          <div class="container">
+            <div class="preview__inner">
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="skeleton skeleton--preview">
+                      <div class="skeleton__inner">
+                        <div class="skeleton__avatar">
+                        </div>
+                        <div class="skeleton__info">
+                          <div class="skeleton__line skeleton__line--name"></div>
+                          <div class="skeleton__line skeleton__line--subname"></div>
+                        </div>
+                      </div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                    </div>
+                  </div>
+                  <p class="card__title">Skeleton</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <button class="button button--primary button--preview">Кнопка</button>
+                  </div>
+                  <p class="card__title">Button</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="tooltip tooltip--previev">
+                      <svg class="tooltip__icon">
+                        <use href="./assets/icons/sprite.svg#tooltip-icon">
+                      </svg>
+                      <div class="tooltip__bubble">
+                        Helper Text
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Tooltip</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="accordion accordion--preview">
+                      <details class="accordion__item">
+                        <summary class="accordion__title">
+                          Accordion item 1
+                        </summary>
+                        <p class="accordion__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                          consequat
+                          duis
+                          enim
+                          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                      </details>
+                    </div>
+                  </div>
+                  <p class="card__title">Accordion</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="histogram histogram--preview">
+                      <div class="histogram__inner">
+                        <div class="histogram__orders">
+                          <p class="histogram__orders-title">Total orders</p>
+                          <p class="histogram__number">50254</p>
+                        </div>
+                        <span class="histogram__link" href="#">View all</span>
+                      </div>
+                      <div class="histogram__schedule">
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Histogram</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="avatar avatar--previev">
+                      <img class="avatar__img" src="./assets/images/avatar-200.jpg" alt="Аватар пользователя">
+                    </div>
+                  </div>
+                  <p class="card__title">Avatar</p>
+                  <p class="card__subtitle">Element</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="calendar calendar--previev">
+                      <div class="calendar__title">October 2019</div>
+                      <div class="calendar__wrapper">
+                        <div class="clendar__inner">
+                          <div class="calendar__item calendar__item--day">Mon</div>
+                          <div class="calendar__item calendar__item--day">Tue</div>
+                          <div class="calendar__item calendar__item--day">Wed</div>
+                          <div class="calendar__item calendar__item--day">Thu</div>
+                          <div class="calendar__item calendar__item--day">Fri</div>
+                          <div class="calendar__item calendar__item--day">Sat</div>
+                          <div class="calendar__item calendar__item--day">Sun</div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item">1</div>
+                          <div class="calendar__item">2</div>
+                          <div class="calendar__item">3</div>
+                          <div class="calendar__item">4</div>
+                          <div class="calendar__item">5</div>
+                          <div class="calendar__item">6</div>
+                          <div class="calendar__item">7</div>
+                          <div class="calendar__item">8</div>
+                          <div class="calendar__item">9</div>
+                          <div class="calendar__item">10</div>
+                          <div class="calendar__item">11</div>
+                          <div class="calendar__item">12</div>
+                          <div class="calendar__item">13</div>
+                          <div class="calendar__item">14</div>
+                          <div class="calendar__item">15</div>
+                          <div class="calendar__item">16</div>
+                          <div class="calendar__item">17</div>
+                          <div class="calendar__item calendar__item--target">18</div>
+                          <div class="calendar__item calendar__item--interval">19</div>
+                          <div class="calendar__item calendar__item--interval">20</div>
+                          <div class="calendar__item calendar__item--interval">21</div>
+                          <div class="calendar__item calendar__item--interval">22</div>
+                          <div class="calendar__item calendar__item--target">23</div>
+                          <div class="calendar__item">24</div>
+                          <div class="calendar__item">25</div>
+                          <div class="calendar__item">26</div>
+                          <div class="calendar__item">27</div>
+                          <div class="calendar__item">28</div>
+                          <div class="calendar__item">29</div>
+                          <div class="calendar__item">30</div>
+                          <div class="calendar__item">31</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Calendar</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tabs__content tabs__content--complex">
+        <section class="preview">
+          <div class="container">
+            <div class="preview__inner">
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <button class="button button--primary button--preview">Кнопка</button>
+                  </div>
+                  <p class="card__title">Button</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="tooltip tooltip--previev">
+                      <svg class="tooltip__icon">
+                        <use href="./assets/icons/sprite.svg#tooltip-icon">
+                      </svg>
+                      <div class="tooltip__bubble">
+                        Helper Text
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Tooltip</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="avatar avatar--previev">
+                      <img class="avatar__img" src="./assets/images/avatar-200.jpg" alt="Аватар пользователя">
+                    </div>
+                  </div>
+                  <p class="card__title">Avatar</p>
+                  <p class="card__subtitle">Element</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tabs__content tabs__content--simple">
+        <section class="preview">
+          <div class="container">
+            <div class="preview__inner">
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="skeleton skeleton--preview">
+                      <div class="skeleton__inner">
+                        <div class="skeleton__avatar">
+                        </div>
+                        <div class="skeleton__info">
+                          <div class="skeleton__line skeleton__line--name"></div>
+                          <div class="skeleton__line skeleton__line--subname"></div>
+                        </div>
+                      </div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                      <div class="skeleton__line skeleton__line--text"></div>
+                    </div>
+                  </div>
+                  <p class="card__title">Skeleton</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="histogram histogram--preview">
+                      <div class="histogram__inner">
+                        <div class="histogram__orders">
+                          <p class="histogram__orders-title">Total orders</p>
+                          <p class="histogram__number">50254</p>
+                        </div>
+                        <span class="histogram__link" href="#">View all</span>
+                      </div>
+                      <div class="histogram__schedule">
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                        <div class="histogram__schedule-item" style="height: 66%"></div>
+                        <div class="histogram__schedule-item" style="height: 100%"></div>
+                        <div class="histogram__schedule-item" style="height: 30%"></div>
+                        <div class="histogram__schedule-item" style="height: 50%"></div>
+                        <div class="histogram__schedule-item" style="height: 90%"></div>
+                        <div class="histogram__schedule-item" style="height: 15%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Histogram</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="calendar calendar--previev">
+                      <div class="calendar__title">October 2019</div>
+                      <div class="calendar__wrapper">
+                        <div class="clendar__inner">
+                          <div class="calendar__item calendar__item--day">Mon</div>
+                          <div class="calendar__item calendar__item--day">Tue</div>
+                          <div class="calendar__item calendar__item--day">Wed</div>
+                          <div class="calendar__item calendar__item--day">Thu</div>
+                          <div class="calendar__item calendar__item--day">Fri</div>
+                          <div class="calendar__item calendar__item--day">Sat</div>
+                          <div class="calendar__item calendar__item--day">Sun</div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item">1</div>
+                          <div class="calendar__item">2</div>
+                          <div class="calendar__item">3</div>
+                          <div class="calendar__item">4</div>
+                          <div class="calendar__item">5</div>
+                          <div class="calendar__item">6</div>
+                          <div class="calendar__item">7</div>
+                          <div class="calendar__item">8</div>
+                          <div class="calendar__item">9</div>
+                          <div class="calendar__item">10</div>
+                          <div class="calendar__item">11</div>
+                          <div class="calendar__item">12</div>
+                          <div class="calendar__item">13</div>
+                          <div class="calendar__item">14</div>
+                          <div class="calendar__item">15</div>
+                          <div class="calendar__item">16</div>
+                          <div class="calendar__item">17</div>
+                          <div class="calendar__item calendar__item--target">18</div>
+                          <div class="calendar__item calendar__item--interval">19</div>
+                          <div class="calendar__item calendar__item--interval">20</div>
+                          <div class="calendar__item calendar__item--interval">21</div>
+                          <div class="calendar__item calendar__item--interval">22</div>
+                          <div class="calendar__item calendar__item--target">23</div>
+                          <div class="calendar__item">24</div>
+                          <div class="calendar__item">25</div>
+                          <div class="calendar__item">26</div>
+                          <div class="calendar__item">27</div>
+                          <div class="calendar__item">28</div>
+                          <div class="calendar__item">29</div>
+                          <div class="calendar__item">30</div>
+                          <div class="calendar__item">31</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Calendar</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/template.html" class="card__link">
+                  <div class="card__component">
+                    <div class="accordion accordion--preview">
+                      <details class="accordion__item">
+                        <summary class="accordion__title">
+                          Accordion item 1
+                        </summary>
+                        <p class="accordion__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                          consequat
+                          duis
+                          enim
+                          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                      </details>
+                    </div>
+                  </div>
+                  <p class="card__title">Accordion</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 

@@ -1,16 +1,23 @@
 .preview {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-top: 68px;
-  padding-bottom: 204px;
+  padding: 68px 0 204px 0;
+  background-color: var(--grey-6);
 }
 
 @media (max-width: 400px) {
   .preview {
+    padding: 24px 0;
+  }
+}
+
+.preview__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 400px) {
+  .preview__inner {
     gap: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 }
 

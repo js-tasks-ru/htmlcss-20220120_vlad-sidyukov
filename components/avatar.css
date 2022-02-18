@@ -1,0 +1,23 @@
+.avatar {
+ width: 160px;
+ height: 160px;
+ border-radius: 50%;
+ overflow: hidden;
+}
+
+.avarat--previev {
+  pointer-events: none;
+}
+
+@media (max-width: 400px) {
+  .avatar--previev {
+    width: 102px;
+    height: 102px;
+  }
+}
+
+.avatar__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

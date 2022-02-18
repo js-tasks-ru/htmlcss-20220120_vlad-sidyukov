@@ -44,13 +44,13 @@
                 <a class="components__link" href="">Custom form elements</a>
               </li>
               <li class="components__item">
-                <a class="components__link" href="">Main page</a>
+                <a class="components__link" href="../index.html">Main page</a>
               </li>
             </ul>
           </nav>
           <div class="components__block">
             <h2 class="components__title">Histogram</h2>
-            <h2 class="components__element">
+            <div class="components__element">
               <div class="histogram histogram--component">
                 <div class="histogram__inner">
                   <div class="histogram__orders">
@@ -92,7 +92,182 @@
                   <div class="histogram__schedule-item" style="height: 15%"></div>
                 </div>
               </div>
-            </h2>
+            </div>
+            <div class="components__code">
+              <div class="tabs">
+                <input class="tabs__input tabs__input--html visually-hidden" name="code" type="radio" id="#html-tab"
+                  checked>
+                <input class="tabs__input tabs__input--css visually-hidden" name="code" type="radio" id="#css-tab">
+
+                <div class="tabs__scroller">
+                  <ul class="tabs__list tabs__list--components">
+                    <li class="tabs__item">
+                      <label class="tabs__label tabs__label--html" for="#html-tab">HTML</label>
+                    </li>
+                    <li class="tabs__item">
+                      <label class="tabs__label tabs__label--css" for="#css-tab">CSS</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tabs__content tabs__content--html">
+                  <pre><code>
+&lt;div class=&quot;histogram&quot;&gt;
+  &lt;div class=&quot;histogram__inner&quot;&gt;
+    &lt;div class=&quot;histogram__orders&quot;&gt;
+      &lt;p class=&quot;histogram__orders-title&quot;&gt;Total orders&lt;/p&gt;
+      &lt;p class=&quot;histogram__number&quot;&gt;50254&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot;&gt;View all&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;histogram__schedule&quot;&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code></pre>
+                </div>
+                <div class="tabs__content tabs__content--css">
+                  <pre><code>
+.histogram {
+  width: 100%;
+  padding: 16px 24px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.histogram--preview {
+  max-width: 600px;
+  pointer-events: none;
+}
+
+.histogram--component {
+  max-width: 500px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview {
+    padding: 8px 12px 12px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.histogram__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__inner {
+    margin-bottom: 15px;
+  }
+}
+
+.histogram__orders {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--black);
+}
+
+.histogram__orders-title {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__orders-title {
+    font-size: 8px;
+    line-height: 12px;
+    opacity: 0.8;
+    margin-bottom: 6px;
+  }
+}
+
+.histogram__number {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__number {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+.histogram__link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__link {
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+
+.histogram__schedule {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 50px;
+}
+
+@media (max-width: 400px) {
+  .histogram--preview .histogram__schedule {
+    height: 25px;
+  }
+}
+
+.histogram__schedule-item {
+  flex: auto;
+  background-color: var(--blue);
+}
+                  </code></pre>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

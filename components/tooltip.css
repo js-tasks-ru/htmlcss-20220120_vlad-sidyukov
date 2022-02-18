@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.tooltip--previev {
+  pointer-events: none;
+}
+
 .tooltip__icon {
   width: 24px;
   height: 24px;
@@ -26,6 +30,10 @@
   background-color: var(--blue);
   box-shadow: 0px 2px 4px var(--box-shadow);
   border-radius: 10px;
+}
+
+.tooltip--previev .tooltip__bubble {
+  display: block;
 }
 
 .tooltip__bubble::after {

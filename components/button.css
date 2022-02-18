@@ -1,5 +1,6 @@
 /* Стилизация кнопки */
 .button {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -13,8 +14,8 @@
 }
 
 .button--preview {
-  width: 100%;
   max-width: 250px;
+  pointer-events: none;
 }
 
 @media (max-width: 400px) {
