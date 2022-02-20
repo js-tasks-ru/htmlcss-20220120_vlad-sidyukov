@@ -12,9 +12,8 @@
   }
 }
 
-
 @media (max-width: 600px) {
-  .components .container {
+  .components__container {
     padding: 0;
   }
 }
@@ -107,6 +106,28 @@
 
 @media (max-width: 600px) {
   .components__element {
+    padding: 0 16px;
+  }
+}
+
+.components .tabs__list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+  background-color: var(--grey-2);
+}
+
+.components__code-example {
+  margin: 0;
+  padding: 0 32px;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .components__code-example {
     padding: 0 16px;
   }
 }

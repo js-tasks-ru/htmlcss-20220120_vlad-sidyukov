@@ -4,6 +4,8 @@
 
 .tabs__list {
   display: flex;
+  position: relative;
+  
 }
 
 .tabs__list--components {
@@ -83,11 +85,4 @@
 .tabs__input--html:checked ~ .tabs__content--html,
 .tabs__input--css:checked ~ .tabs__content--css {
   display: block;
-}
-
-.tabs__content pre {
-  margin: 0;
-  padding: 0 32px;
-  border-top: 1px solid var(--grey-2);
-  overflow-x: auto;
 }
