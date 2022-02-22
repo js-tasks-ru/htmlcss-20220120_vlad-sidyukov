@@ -1,17 +1,22 @@
 @import './normalize.css';
+@import './global.css';
 @import '../fonts/fonts.css';
 @import '../../components/header.css';
 @import '../../components/main-content.css';
 @import '../../components/footer.css';
-@import '../../components/accordion.css';
-@import '../../components/button.css';
+@import '../../components/tabs.css';
 @import '../../components/preview.css';
-@import '../../components/skeleton.css';
-@import '../../components/tooltip.css';
 @import '../../components/card.css';
 @import '../../components/components.css';
 @import '../../components/footer-components.css';
+@import '../../components/accordion.css';
+@import '../../components/button.css';
+@import '../../components/skeleton.css';
+@import '../../components/tooltip.css';
 @import '../../components/histogram.css';
+@import '../../components/calendar.css';
+@import '../../components/avatar.css';
+
 
 :root {
   --white: #ffffff;
@@ -29,7 +34,6 @@
   --grey-3: #ACB5BD;
   --grey-4: #495057;
   --grey-5: #90A0B7;
-
   --grey-6: #F9FAFC;
   
   --box-shadow: rgba(33, 36, 41, 0.05);
@@ -46,42 +50,6 @@
 
   --secondary: var(--purple);
   --secondary-hover: var(--purple-1);
-}
-
-/*Глобальные стили*/
-
-.container {
-  max-width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-  min-width: 375px;
-}
-
-.page, 
-.content {
-  height: 100%;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1 1 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 

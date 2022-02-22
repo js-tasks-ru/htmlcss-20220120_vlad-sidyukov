@@ -1,6 +1,7 @@
 .header {
   padding-top: 24px;
   padding-bottom: 77px;
+  background-color: var(--white);
 }
 
 @media (max-width: 600px) {
@@ -43,7 +44,6 @@
     margin: 0 auto;
   }
 }
-
 
 .header__title {
   font-family: 'Inter', sans-serif;

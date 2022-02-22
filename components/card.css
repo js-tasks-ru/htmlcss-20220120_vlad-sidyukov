@@ -1,14 +1,18 @@
 .card {
-  padding: 36px 24px;
   background-color: var(--white);
   box-shadow: 0px 2px 4px var(--box-shadow);
   border-radius: 12px;
+}
+
+.card__link {
+  padding: 36px 24px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 @media (max-width: 400px) {
-  .card {
+  .card__link {
     padding: 8px 0 0 0;
   }
 }
@@ -27,8 +31,8 @@
   }
 }
 
-
 .card__title {
+  margin: 8px 0 0 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
