@@ -1,6 +1,7 @@
-.togler {
-  display: block;
+.toggler {
+  cursor: pointer;
 }
+
 
 .toggler__label {
   position: relative;
