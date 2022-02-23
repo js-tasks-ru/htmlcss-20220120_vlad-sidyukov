@@ -11,16 +11,63 @@
 
   <header class="header">
     <div class="container">
+      <button class="header__button">
+        <span class="header__button-icon"></span>
+      </button>
       <svg class="header__icon">
         <use href="./assets/icons/sprite.svg#header-icon">
       </svg>
-      <h1 class="header__title">
-        Reusable component library
-      </h1>
     </div>
   </header>
 
   <main class="main-content">
+    <div class="container">
+      <nav class="menu">
+        <div class="menu__block">
+          <div class="menu__theme theme">
+            <p class="theme__text">Dark mode</p>
+            <label class="toggler">
+              <input class="toggler__input visually-hidden" type="checkbox" name="not">
+              <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+            </label>
+          </div>
+        </div>
+        <div class="menu__block">
+          <p class="menu__title">Complex</p>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Button</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Tooltip</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Avatar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__block">
+          <p class="menu__title">Simple</p>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Skeleton</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Histogram</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Calendar</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/template.html" class="menu__link">Accordion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="title">
+        Reusable component library
+      </h1>
+    </div>
     <div class="tabs">
       <input class="tabs__input tabs__input--all visually-hidden" type="radio" id="#all-tab" name="tabs" checked>
       <input class="tabs__input tabs__input--complex visually-hidden" type="radio" id="#complex-tab" name="tabs">
@@ -449,6 +496,8 @@
       </p>
     </div>
   </footer>
+  
+  <script src="./assets/js/menu.js"></script>
 
 </body>
 

@@ -30,41 +30,6 @@
   }
 }
 
-.components__nav {
-}
-
-@media (max-width: 600px) {
-  .components__nav {
-    display: none;
-  }
-}
-
-.components__nav-title {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  color: var(--black);
-  margin-bottom: 16px;
-}
-
-.components__list {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--black);
-}
-
-.components__item:last-child {
-  margin-top: 32px;
-}
-
-.components__link {
-}
-
-.components__link--active {
-  color: var(--red);
-}
-
 .components__block {
   min-height: 700px;
   padding: 28px 0;

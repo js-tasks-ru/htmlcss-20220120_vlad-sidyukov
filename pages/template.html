@@ -11,6 +11,9 @@
 <body class="content">
   <header class="header header--component">
     <div class="container">
+      <button class="header__button">
+        <span class="header__button-icon"></span>
+      </button>
       <svg class="header__icon">
         <use href="../assets/icons/sprite.svg#header-icon">
       </svg>
@@ -20,33 +23,51 @@
     <section class="components">
       <div class="components__container container">
         <div class="components__inner">
-          <nav class="components__nav">
-            <h2 class="components__nav-title">
-              Components
-            </h2>
-            <ul class="components__list">
-              <li class="components__item">
-                <a class="components__link" href="">Modal</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Tooltip</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Avatar</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Calendar</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link components__link--active" href="">Histogram</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Custom form elements</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="../index.html">Main page</a>
-              </li>
-            </ul>
+          <nav class="menu menu--components">
+            <div class="menu__block">
+              <div class="menu__theme theme">
+                <p class="theme__text">Dark mode</p>
+                <label class="theme__toggler toggler">
+                  <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                  <span class="theme__label toggler__label"><span class="visually-hidden">Dark mode</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="menu__block">
+              <p class="menu__title">Complex</p>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Button</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Tooltip</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Avatar</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__block">
+              <p class="menu__title">Simple</p>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Skeleton</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link menu__link--active">Histogram</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Calendar</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Accordion</a>
+                </li>
+                <li class="menu__item menu__item--main-page">
+                  <a href="../index.html" class="menu__link">Main page</a>
+                </li>
+
+              </ul>
+            </div>
           </nav>
           <div class="components__block">
             <h2 class="components__title">Histogram</h2>
@@ -281,6 +302,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="../assets/js/menu.js"></script>
 
 </body>
 
