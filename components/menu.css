@@ -9,7 +9,7 @@
     padding: 0 0 16px;
     position: absolute;
     z-index: 5;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--grey-6);
     left: -100vh;
@@ -26,7 +26,7 @@
   }
 }
 
-.menu._active {
+.menu--active {
   left: 0;
 }
 
@@ -51,12 +51,10 @@
 
 
 @media (min-width: 600px) {
-  .menu__theme {
+  .menu__theme-toggler {
     display: none;
   }
 }
-
-
 
 .menu__title {
   font-size: 20px;

@@ -1,10 +1,10 @@
-.theme {
+.theme-toggler {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.theme__text {
+.theme-toggler__text {
   font-size: 16px;
   line-height: 24px;
   color: var(--black);
