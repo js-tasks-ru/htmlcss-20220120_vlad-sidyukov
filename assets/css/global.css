@@ -2,7 +2,7 @@
 
 .container {
   max-width: 1140px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
   min-width: 375px;
 }
@@ -17,8 +17,10 @@
   flex-direction: column;
 }
 
-.content._lock {
-	overflow: hidden;
+@media (max-width: 600px) {
+  .content._lock {
+    overflow: hidden;
+  }
 }
 
 .main-content {

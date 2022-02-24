@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
-<html class="page" lang="ru">
+<html class="page" lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,49 +21,49 @@
   </header>
 
   <main class="main-content">
+    <nav class="menu">
+      <div class="menu__block">
+        <div class="menu__theme theme">
+          <p class="theme__text">Dark mode</p>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden" type="checkbox" name="not">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+        </div>
+      </div>
+      <div class="menu__block">
+        <p class="menu__title">Complex</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Button</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Tooltip</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Avatar</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__block">
+        <p class="menu__title">Simple</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Skeleton</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Histogram</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Calendar</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/template.html" class="menu__link">Accordion</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
-      <nav class="menu">
-        <div class="menu__block">
-          <div class="menu__theme theme">
-            <p class="theme__text">Dark mode</p>
-            <label class="toggler">
-              <input class="toggler__input visually-hidden" type="checkbox" name="not">
-              <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
-            </label>
-          </div>
-        </div>
-        <div class="menu__block">
-          <p class="menu__title">Complex</p>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Button</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Tooltip</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Avatar</a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__block">
-          <p class="menu__title">Simple</p>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Skeleton</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Histogram</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Calendar</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/template.html" class="menu__link">Accordion</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <h1 class="title">
         Reusable component library
       </h1>
@@ -496,7 +496,7 @@
       </p>
     </div>
   </footer>
-  
+
   <script src="./assets/js/menu.js"></script>
 
 </body>

@@ -2,7 +2,6 @@
   cursor: pointer;
 }
 
-
 .toggler__label {
   position: relative;
   display: flex;
@@ -34,6 +33,10 @@
   border-radius: 16px;
   margin: 0 12px 0 0;
   transition-duration: 0.3s;
+}
+
+.toggler--theme .toggler__label::before {
+  margin: 0;
 }
 
 .toggler__input:checked + .toggler__label::before {
