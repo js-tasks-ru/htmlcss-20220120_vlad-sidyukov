@@ -13,28 +13,24 @@
 }
 
 .preview__inner {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 30px;
 }
 
 @media (max-width: 400px) {
   .preview__inner {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 16px;
   }
 }
 
 .preview__card {
-  flex: 1 0 290px;
-  max-width: 610px;
   min-height: 367px;
 }
 
 @media (max-width: 400px) {
   .preview__card {
-    flex: 1 0 162px;
-    max-width: 176px;
     min-height: 210px;
   } 
 }
