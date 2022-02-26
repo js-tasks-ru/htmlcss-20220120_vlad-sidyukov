@@ -4,11 +4,8 @@
 @import '../../components/header.css';
 @import '../../components/main-content.css';
 @import '../../components/footer.css';
-@import '../../components/tabs.css';
-@import '../../components/preview.css';
-@import '../../components/card.css';
-@import '../../components/components.css';
 @import '../../components/footer-components.css';
+@import '../../components/toggler.css';
 @import '../../components/accordion.css';
 @import '../../components/button.css';
 @import '../../components/skeleton.css';
@@ -16,6 +13,15 @@
 @import '../../components/histogram.css';
 @import '../../components/calendar.css';
 @import '../../components/avatar.css';
+@import '../../components/title.css';
+@import '../../components/theme.css';
+@import '../../components/components.css';
+@import '../../components/preview.css';
+@import '../../components/card.css';
+@import '../../components/tabs.css';
+@import '../../components/context-menu.css';
+
+
 
 
 :root {

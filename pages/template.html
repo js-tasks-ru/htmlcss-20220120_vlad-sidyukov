@@ -11,6 +11,9 @@
 <body class="content">
   <header class="header header--component">
     <div class="container">
+      <button class="header__toggler-mobile-menu">
+        <span class="header__toggler-mobile-menu-icon"></span>
+      </button>
       <svg class="header__icon">
         <use href="../assets/icons/sprite.svg#header-icon">
       </svg>
@@ -20,33 +23,50 @@
     <section class="components">
       <div class="components__container container">
         <div class="components__inner">
-          <nav class="components__nav">
-            <h2 class="components__nav-title">
-              Components
-            </h2>
-            <ul class="components__list">
-              <li class="components__item">
-                <a class="components__link" href="">Modal</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Tooltip</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Avatar</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Calendar</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link components__link--active" href="">Histogram</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="">Custom form elements</a>
-              </li>
-              <li class="components__item">
-                <a class="components__link" href="../index.html">Main page</a>
-              </li>
-            </ul>
+          <nav class="context-menu context-menu--components">
+            <div class="context-menu__block">
+              <div class="context-menu__theme-toggler theme-toggler">
+                <p class="theme-toggler__text">Dark mode</p>
+                <label class="toggler toggler--theme">
+                  <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                  <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Complex</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Button</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Tooltip</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Avatar</a>
+                </li>
+              </ul>
+            </div>
+            <div class="context-menu__block">
+              <p class="context-menu__title">Simple</p>
+              <ul class="context-menu__list">
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Skeleton</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link context-menu__link--active">Histogram</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Calendar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="" class="context-menu__link">Accordion</a>
+                </li>
+                <li class="context-menu__item context-menu__item--main-page">
+                  <a href="../index.html" class="context-menu__link">Main page</a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <div class="components__block">
             <h2 class="components__title">Histogram</h2>
@@ -281,6 +301,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="../assets/js/menu.js"></script>
 
 </body>
 
