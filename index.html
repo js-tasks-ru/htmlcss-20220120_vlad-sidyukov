@@ -35,13 +35,16 @@
         <p class="context-menu__title">Complex</p>
         <ul class="context-menu__list">
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Button</a>
+            <a href="./pages/button.html" class="context-menu__link">Button</a>
           </li>
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Tooltip</a>
+            <a href="./pages/tooltip.html" class="context-menu__link">Tooltip</a>
           </li>
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Avatar</a>
+            <a href="./pages/avatar.html" class="context-menu__link">Avatar</a>
+          </li>
+          <li class="context-menu__item">
+            <a href="./pages/form-elements.html" class="context-menu__link">Custom form elements</a>
           </li>
         </ul>
       </div>
@@ -49,16 +52,16 @@
         <p class="context-menu__title">Simple</p>
         <ul class="context-menu__list">
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Skeleton</a>
+            <a href="./pages/skeleton.html" class="context-menu__link">Skeleton</a>
           </li>
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Histogram</a>
+            <a href="./pages/histogram.html" class="context-menu__link">Histogram</a>
           </li>
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Calendar</a>
+            <a href="./pages/calendar.html" class="context-menu__link">Calendar</a>
           </li>
           <li class="context-menu__item">
-            <a href="./pages/template.html" class="context-menu__link">Accordion</a>
+            <a href="./pages/accordion.html" class="context-menu__link">Accordion</a>
           </li>
         </ul>
       </div>
@@ -94,7 +97,7 @@
           <div class="container">
             <div class="preview__inner">
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/skeleton.html" class="card__link">
                   <div class="card__component">
                     <div class="skeleton skeleton--preview">
                       <div class="skeleton__inner">
@@ -114,7 +117,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/button.html" class="card__link">
                   <div class="card__component">
                     <button class="button button--primary button--preview">Кнопка</button>
                   </div>
@@ -123,7 +126,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/tooltip.html" class="card__link">
                   <div class="card__component">
                     <div class="tooltip tooltip--previev">
                       <svg class="tooltip__icon">
@@ -139,7 +142,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/accordion.html" class="card__link">
                   <div class="card__component">
                     <div class="accordion accordion--preview">
                       <details class="accordion__item">
@@ -161,7 +164,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/histogram.html" class="card__link">
                   <div class="card__component">
                     <div class="histogram histogram--preview">
                       <div class="histogram__inner">
@@ -210,7 +213,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/avatar.html" class="card__link">
                   <div class="card__component">
                     <div class="avatar avatar--previev">
                       <img class="avatar__img" src="./assets/images/avatar-200.jpg" alt="Аватар пользователя">
@@ -221,7 +224,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/calendar.html" class="card__link">
                   <div class="card__component">
                     <div class="calendar calendar--previev">
                       <div class="calendar__title">October 2019</div>
@@ -277,6 +280,38 @@
                   <p class="card__subtitle">Container</p>
                 </a>
               </div>
+              <div class="preview__card card">
+                <a href="./pages/form-elements.html" class="card__link">
+                  <div class="card__component card__component--form">
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Default</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not" checked>
+                      <span class="checkbox__label">Checked</span>
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input visually-hidden" type="radio" name="not" value="Default">
+                      <span class="radio__label">Default</span>
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input visually-hidden" type="radio" name="not" value="Checked" checked>
+                      <span class="radio__label">Checked</span>
+                    </label>
+                    <label class="toggler">
+                      <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                      <span class="toggler__label">Off</span>
+                    </label>
+                    <label class="toggler">
+                      <input class="toggler__input visually-hidden" type="checkbox" name="not" checked>
+                      <span class="toggler__label">On</span>
+                    </label>
+                  </div>
+                  <p class="card__title">Custom form elements</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -286,7 +321,7 @@
           <div class="container">
             <div class="preview__inner">
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/button.html" class="card__link">
                   <div class="card__component">
                     <button class="button button--primary button--preview">Кнопка</button>
                   </div>
@@ -295,7 +330,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/tooltip.html" class="card__link">
                   <div class="card__component">
                     <div class="tooltip tooltip--previev">
                       <svg class="tooltip__icon">
@@ -311,7 +346,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/avatar.html" class="card__link">
                   <div class="card__component">
                     <div class="avatar avatar--previev">
                       <img class="avatar__img" src="./assets/images/avatar-200.jpg" alt="Аватар пользователя">
@@ -319,6 +354,38 @@
                   </div>
                   <p class="card__title">Avatar</p>
                   <p class="card__subtitle">Element</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/form-elements.html" class="card__link">
+                  <div class="card__component card__component--form">
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Default</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not" checked>
+                      <span class="checkbox__label">Checked</span>
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input visually-hidden" type="radio" name="not" value="Default">
+                      <span class="radio__label">Default</span>
+                    </label>
+                    <label class="radio">
+                      <input class="radio__input visually-hidden" type="radio" name="not" value="Checked" checked>
+                      <span class="radio__label">Checked</span>
+                    </label>
+                    <label class="toggler">
+                      <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                      <span class="toggler__label">Off</span>
+                    </label>
+                    <label class="toggler">
+                      <input class="toggler__input visually-hidden" type="checkbox" name="not" checked>
+                      <span class="toggler__label">On</span>
+                    </label>
+                  </div>
+                  <p class="card__title">Custom form elements</p>
+                  <p class="card__subtitle">Container</p>
                 </a>
               </div>
             </div>
@@ -330,7 +397,7 @@
           <div class="container">
             <div class="preview__inner">
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/skeleton.html" class="card__link">
                   <div class="card__component">
                     <div class="skeleton skeleton--preview">
                       <div class="skeleton__inner">
@@ -350,7 +417,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/histogram.html" class="card__link">
                   <div class="card__component">
                     <div class="histogram histogram--preview">
                       <div class="histogram__inner">
@@ -399,7 +466,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/calendar.html" class="card__link">
                   <div class="card__component">
                     <div class="calendar calendar--previev">
                       <div class="calendar__title">October 2019</div>
@@ -456,7 +523,7 @@
                 </a>
               </div>
               <div class="preview__card card">
-                <a href="./pages/template.html" class="card__link">
+                <a href="./pages/accordion.html" class="card__link">
                   <div class="card__component">
                     <div class="accordion accordion--preview">
                       <details class="accordion__item">
@@ -498,6 +565,7 @@
   </footer>
 
   <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/preload.js"></script>
 
 </body>
 

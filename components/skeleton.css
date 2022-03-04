@@ -5,6 +5,10 @@
   border-radius: 8px;
 }
 
+.skeleton--component {
+  max-width: 600px;
+}
+
 .skeleton--preview {
   max-width: 600px;
   pointer-events: none;
@@ -18,8 +22,8 @@
 
 .skeleton__line {
   height: 20px;
-  background: var(--grey-gradient)
 }
+
 
 @media (max-width: 400px) {
   .skeleton--preview .skeleton__line {
@@ -45,8 +49,26 @@
   width: 64px;
   height: 64px;
   margin-right: 16px;
-  background-color: var(--grey-2);
   border-radius: 50%;
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+}
+
+.skeleton__line,
+.skeleton__avatar {
+  background-color: var(--grey-2);
+  background-image: var(--grey-gradient);
+  background-size: 200%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: gradient;
+  animation-timing-function: linear;
+}
+
+@keyframes gradient {
+  to {
+      background-position: 200%;
+  }
 }
 
 @media (max-width: 400px) {

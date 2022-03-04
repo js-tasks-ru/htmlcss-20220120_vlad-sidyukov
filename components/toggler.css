@@ -57,7 +57,7 @@
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 50%;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 
 .toggler__input:checked + .toggler__label::after {

@@ -11,6 +11,11 @@
   border-radius: 8px;
   padding: 15px 15px 14px;
   white-space: nowrap;
+  transition-duration: 0.1s;
+}
+
+.button:active {
+  transform: translateY(4px);
 }
 
 .button--preview {
@@ -55,10 +60,12 @@
 .button--alternate {
   background-color: transparent;
   color: var(--black);
-  border: 1px solid #ACB5BD;
+  border: 1px solid var(--grey-3);
 }
 
 .button--alternate:hover {
   border-color: var(--black);
 }
+
+
 
