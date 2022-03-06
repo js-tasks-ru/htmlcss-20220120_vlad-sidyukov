@@ -33,7 +33,7 @@
 .checkbox__input:checked + .checkbox__label::before {
   background-color: var(--blue);
   border-color: var(--blue);
-  background-image: url('../../assets/images/checkbox.svg');
+  background-image: url('../assets/images/checkbox.svg');
   background-position: center;
   background-repeat: no-repeat;
   animation-name: pulse;
