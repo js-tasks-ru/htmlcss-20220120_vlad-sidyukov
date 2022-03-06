@@ -6,6 +6,10 @@
   border-radius: 8px;
 }
 
+.calendar--component {
+  max-width: 400px;
+}
+
 .calendar--previev {
   max-width: 300px;
   pointer-events: none;
@@ -31,7 +35,7 @@
 }
 
 @media (max-width: 400px) {
-  .calendar__title {
+  .calendar--previev .calendar__title {
     font-size: 10px;
     line-height: 12px;  
     margin-bottom: 12px;
@@ -67,7 +71,7 @@
 }
 
 @media (max-width: 400px) {
-  .calendar__item {
+  .calendar--previev .calendar__item {
     font-size: 8px;
     line-height: 10px;
     color: var(--blue-2);
@@ -83,7 +87,7 @@
 }
 
 @media (max-width: 400px) {
-  .calendar__item--day {
+  .calendar--previev .calendar__item--day {
     font-size: 7px;
     line-height: 10px;
   }

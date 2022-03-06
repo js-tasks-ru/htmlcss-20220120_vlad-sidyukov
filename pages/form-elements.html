@@ -37,13 +37,16 @@
               <p class="context-menu__title">Complex</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Button</a>
+                  <a href="./button.html" class="context-menu__link">Button</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Tooltip</a>
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Avatar</a>
+                  <a href="./avatar.html" class="context-menu__link">Avatar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./form-elements.html" class="context-menu__link context-menu__link--active">Custom form elements</a>
                 </li>
               </ul>
             </div>
@@ -51,16 +54,16 @@
               <p class="context-menu__title">Simple</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Skeleton</a>
+                  <a href="./skeleton.html" class="context-menu__link">Skeleton</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link context-menu__link--active">Histogram</a>
+                  <a href="./histogram.html" class="context-menu__link">Histogram</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Calendar</a>
+                  <a href="./calendar.html" class="context-menu__link">Calendar</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Accordion</a>
+                  <a href="./accordion.html" class="context-menu__link">Accordion</a>
                 </li>
                 <li class="context-menu__item context-menu__item--main-page">
                   <a href="../index.html" class="context-menu__link">Main page</a>
@@ -71,56 +74,83 @@
           <div class="components__block">
             <h2 class="components__title">Histogram</h2>
             <div class="components__element">
-              <div class="histogram histogram--component">
-                <div class="histogram__inner">
-                  <div class="histogram__orders">
-                    <p class="histogram__orders-title">Total orders</p>
-                    <p class="histogram__number">50254</p>
-                  </div>
-                  <a class="histogram__link" href="#">View all</a>
+              <div class="components__form-toggler">
+                <div class="components__form-inner">
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Default">
+                    <span class="radio__label">Default</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Checked" checked>
+                    <span class="radio__label">Checked</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="not" value="Disabled" disabled>
+                    <span class="radio__label">Disabled</span>
+                  </label>
                 </div>
-                <div class="histogram__schedule">
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
+                <div class="components__form-inner">
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                    <span class="checkbox__label">Default</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not" checked>
+                    <span class="checkbox__label">Checked</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="not" disabled>
+                    <span class="checkbox__label">Disabled</span>
+                  </label>
+                </div>
+                <div class="components__form-inner">
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                    <span class="toggler__label">Off</span>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not" checked>
+                    <span class="toggler__label">On</span>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__input visually-hidden" type="checkbox" name="not" disabled>
+                    <span class="toggler__label">Disabled</span>
+                  </label>
                 </div>
               </div>
+              <div class="components__input-field">
+                <label class="input-text">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" placeholder="Placeholder">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Label</span>
+                </label>
+                <label class="input-text input-text--success">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Success">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Success</span>
+                </label>
+                <label class="input-text input-text--error">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Error">
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Error</span>
+                </label>
+                <label class="input-text">
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input" type="text" value="Disabled" disabled>
+                    <span class="input-text__icon"></span>
+                  </div>
+                  <span class="input__label">Disabled</span>
+                </label>
+              </div>
+              
+              
             </div>
-            <label class="checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="not">
-              <span class="checkbox__label">Default</span>
-            </label>
-            <label class="toggler">
-              <input class="toggler__input visually-hidden" type="checkbox" name="not">
-              <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
-            </label>
             <div class="components__code">
               <div class="tabs">
                 <input class="tabs__input tabs__input--html visually-hidden" name="code" type="radio" id="#html-tab"
@@ -311,7 +341,6 @@
   </footer>
 
   <script src="../assets/js/menu.js"></script>
-  <script src="./assets/js/preload.js"></script>
 
 </body>
 

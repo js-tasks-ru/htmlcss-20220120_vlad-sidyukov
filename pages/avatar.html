@@ -37,13 +37,16 @@
               <p class="context-menu__title">Complex</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Button</a>
+                  <a href="./button.html" class="context-menu__link">Button</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Tooltip</a>
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Avatar</a>
+                  <a href="./avatar.html" class="context-menu__link context-menu__link--active">Avatar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./form-elements.html" class="context-menu__link">Custom form elements</a>
                 </li>
               </ul>
             </div>
@@ -51,16 +54,16 @@
               <p class="context-menu__title">Simple</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Skeleton</a>
+                  <a href="./skeleton.html" class="context-menu__link">Skeleton</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link context-menu__link--active">Histogram</a>
+                  <a href="./histogram.html" class="context-menu__link">Histogram</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Calendar</a>
+                  <a href="./calendar.html" class="context-menu__link">Calendar</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Accordion</a>
+                  <a href="./accordion.html" class="context-menu__link">Accordion</a>
                 </li>
                 <li class="context-menu__item context-menu__item--main-page">
                   <a href="../index.html" class="context-menu__link">Main page</a>
@@ -69,58 +72,12 @@
             </div>
           </nav>
           <div class="components__block">
-            <h2 class="components__title">Histogram</h2>
+            <h2 class="components__title">Avatar</h2>
             <div class="components__element">
-              <div class="histogram histogram--component">
-                <div class="histogram__inner">
-                  <div class="histogram__orders">
-                    <p class="histogram__orders-title">Total orders</p>
-                    <p class="histogram__number">50254</p>
-                  </div>
-                  <a class="histogram__link" href="#">View all</a>
-                </div>
-                <div class="histogram__schedule">
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                </div>
+              <div class="avatar">
+                <img class="avatar__img" src="../assets/images/avatar-200.jpg" alt="Аватар пользователя">
               </div>
             </div>
-            <label class="checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="not">
-              <span class="checkbox__label">Default</span>
-            </label>
-            <label class="toggler">
-              <input class="toggler__input visually-hidden" type="checkbox" name="not">
-              <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
-            </label>
             <div class="components__code">
               <div class="tabs">
                 <input class="tabs__input tabs__input--html visually-hidden" name="code" type="radio" id="#html-tab"
@@ -140,7 +97,7 @@
 
                 <div class="tabs__content tabs__content--html">
                   <pre class="components__code-example">
-                    
+
 &lt;div class=&quot;histogram&quot;&gt;
   &lt;div class=&quot;histogram__inner&quot;&gt;
     &lt;div class=&quot;histogram__orders&quot;&gt;
