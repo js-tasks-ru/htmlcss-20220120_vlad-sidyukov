@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <!-- Страница с модалкой -->
-<html lang="ru" >
+<html lang="ru">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <link rel="stylesheet" href="./modal.css">
+  <link rel="stylesheet" href="./wrapper.css">
   <title>Modal</title>
 </head>
 
 <body>
   <div class="container">
-    <button class="button button--primary modal-open">
-      Open modal
-    </button>
-    <div class="modal">
-      <div class="modal__window">
-        <p class="modal__title">
-          Modal title
-        </p>
-        <p class="modal__text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-          mollit. Exercitation veniam consequat sunt nostrud amet.
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-          mollit. Exercitation veniam consequat sunt nostrud amet.
-        </p>
-        <button class="modal__close"></button>
+    <div class="wrapper">
+      <button class="wrapper__button button button--primary modal-open">
+        Open modal
+      </button>
+      <div class="modal">
+        <div class="modal__window">
+          <h3 class="modal__title">
+            Modal title
+          </h3>
+          <p class="modal__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit
+            mollit. Exercitation veniam consequat sunt nostrud amet.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit
+            mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <button class="modal__close"></button>
+        </div>
       </div>
     </div>
   </div>
