@@ -12,6 +12,10 @@
   background-color: rgba(196, 196, 196, 0.5);
 }
 
+.modal__open {
+  width: auto;
+}
+
 .modal__window {
   font-family: 'Inter', sans-serif;
   font-style: normal;
