@@ -1,19 +1,17 @@
 (function() {
-    const close = document.getElementById('modal-close');
-    const modal = document.getElementById('modal');
-    const modalOpen = document.getElementById('modal-open');
-
-    if (!close || !modalOpen || !modal) {
-        return;
-    }
+    const close = document.querySelector('.modal__close');
+    const modal = document.querySelector('.modal');
+    const modalOpen = document.querySelector('.js-button');
 
     modalOpen.addEventListener('click', () => {
-        modal.style.display = 'block';
-        document.body.overflow = 'hidden';
+        modal.style.display = 'flex';
+        document.body.classList.toggle('content--modal-lock');
+        modalOpen.classList.toggle('button--disabled');
     });
 
     close.addEventListener('click', () => {
         modal.style.display = 'none';
-        document.body.overflow = 'initial';
+        document.body.classList.remove('content--modal-lock');
+        modalOpen.classList.remove('button--disabled');
     });
 })();
