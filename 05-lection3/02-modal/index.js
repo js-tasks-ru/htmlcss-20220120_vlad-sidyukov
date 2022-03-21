@@ -1,7 +1,7 @@
 (function() {
     const close = document.querySelector('.modal__close');
     const modal = document.querySelector('.modal');
-    const modalOpen = document.querySelector('.modal__open');
+    const modalOpen = document.querySelector('.js-button');
 
     modalOpen.addEventListener('click', () => {
         modal.style.display = 'flex';
