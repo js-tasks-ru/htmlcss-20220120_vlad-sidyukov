@@ -4,7 +4,6 @@
   padding-top: 36px;
   padding-bottom: 10px;
   background-color: var(--secondary-bg);
-  height: 100%;
 }
 
 @media (max-width: 600px) {
