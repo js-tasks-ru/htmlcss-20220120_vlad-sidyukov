@@ -70,10 +70,6 @@
   padding: 0 32px;
 }
 
-
-.components__code {
-}
-
 .components__element--tooltip {
   margin: 64px 0;
   display: flex;
@@ -125,7 +121,6 @@
   gap: 16px;
   margin-bottom: 16px;
 }
-
 
 .components .tabs__list::after {
   content: "";
