@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../components/code.css">
-  <title>Tooltip</title>
+  <title>Modal</title>
 </head>
 
 <body class="content">
@@ -57,7 +57,7 @@
                   <a href="./button.html" class="context-menu__link">Button</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="./tooltip.html" class="context-menu__link context-menu__link--active">Tooltip</a>
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
                 </li>
                 <li class="context-menu__item">
                   <a href="./avatar.html" class="context-menu__link">Avatar</a>
@@ -82,8 +82,8 @@
                 <li class="context-menu__item">
                   <a href="./accordion.html" class="context-menu__link">Accordion</a>
                 </li>
-                <li class="context-menu__item context-menu__link--active">
-                  <a href="./modal.html" class="context-menu__link">Modal</a>
+                <li class="context-menu__item">
+                  <a href="./modal.html" class="context-menu__link context-menu__link--active">Modal</a>
                 </li>
                 <li class="context-menu__item context-menu__item--main-page">
                   <a href="../index.html" class="context-menu__link">Main page</a>
@@ -92,14 +92,23 @@
             </div>
           </nav>
           <div class="components__block">
-            <h2 class="components__title">Tooltip</h2>
-            <div class="components__element components__element--tooltip">
-              <div class="tooltip">
-                <svg class="tooltip__icon">
-                  <use href="../assets/icons/sprite.svg#tooltip-icon">
-                </svg>
-                <div class="tooltip__bubble">
-                  Helper Text
+            <h2 class="components__title">Modal</h2>
+            <div class="components__element">
+              <button class="button button--primary js-button">
+                Open modal
+              </button>
+              <div class="modal">
+                <div class="modal__window">
+                  <h3 class="modal__title">
+                    Modal title
+                  </h3>
+                  <p class="modal__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                  <button class="modal__close"></button>
                 </div>
               </div>
             </div>
@@ -123,12 +132,15 @@
                 <div class="tabs__content tabs__content--html">
                   <pre class="components__code-example">
                     <code data-simplebar class="prettyprint">    
-&lt;div class="tooltip"&gt;
-  &lt;svg class="tooltip__icon"&gt;
-    &lt;use href="../assets/icons/sprite.svg#tooltip-icon"&gt;
-  &lt;/svg&gt;
-  &lt;div class="tooltip__bubble"&gt;
-    Helper Text
+&lt;div class="modal"&gt;
+  &lt;div class="modal__window"&gt;
+    &lt;h3 class="modal__title"&gt;
+      Modal title
+    &lt;/h3&gt;
+    &lt;p class="modal__text"&gt;
+     Text
+    &lt;/p&gt;
+    &lt;button class="modal__close"&gt;&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
                     </code>
@@ -137,57 +149,65 @@
                 <div class="tabs__content tabs__content--css">
                   <pre class="components__code-example">
                     <code class="code prettyprint">
-.tooltip {
-  display: inline-block;
-  position: relative;
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(196, 196, 196, 0.5);
 }
 
-.tooltip--previev {
-  pointer-events: none;
+.modal__open {
+  width: auto;
 }
 
-.tooltip__icon {
-  width: 24px;
-  height: 24px;
-  color: var(--main-text-color);
-}
-
-.tooltip__bubble {
+.modal__window {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  position: relative;
+  width: 100%;
+  max-width: 428px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  background-color: var(--white);
+  overflow: auto;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blue-2);
+  margin-bottom: 14px;
+}
+
+.modal__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-2);
-  white-space: nowrap;
-  display: none;
+  color: var(--grey-4);
+}
+
+.modal__close {
   position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 13px 21px 8px;
-  background-color: var(--blue);
-  box-shadow: 0px 2px 4px var(--box-shadow);
-  border-radius: 10px;
-}
-
-.tooltip--previev .tooltip__bubble {
-  display: block;
-}
-
-.tooltip__bubble::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 8px solid transparent;
-  border-top-color: var(--blue);
-}
-
-.tooltip__icon:hover ~ .tooltip__bubble {
-  display: block;
-}
+  top: 15px;
+  right: 15px;
+  width: 9px;
+  height: 9px;
+  background-image: url("./img/Group.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}                
                     </code>
                   </pre>
                 </div>

@@ -35,7 +35,7 @@
 
 .button--primary {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--button-text-color);
 }
 
 .button--primary:hover {
@@ -44,7 +44,7 @@
 
 .button--secondary {
   background-color: var(--secondary);
-  color: var(--white);
+  color: var(--button-text-color);
 }
 
 .button--secondary:hover {
@@ -53,12 +53,12 @@
 
 .button--alternate {
   background-color: transparent;
-  color: var(--black);
-  border: 1px solid var(--grey-3);
+  color: var(--main-text-color);
+  border: 1px solid var(--rare-border-color);
 }
 
 .button--alternate:hover {
-  border-color: var(--black);
+  border-color: var(--main-border-color);
 }
 
 .button--disabled,

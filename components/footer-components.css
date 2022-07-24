@@ -1,6 +1,6 @@
 .footer-components {
   padding: 56px 0;
-  background-color: var(--grey-6);
+  background-color: var(--main-components-bg);
 }
 
 @media (max-width: 600px) {

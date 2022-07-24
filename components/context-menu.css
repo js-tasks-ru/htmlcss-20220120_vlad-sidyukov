@@ -1,6 +1,5 @@
 .context-menu {
   display: none;
-  overflow: auto;
 }
 
 @media (max-width: 600px) {
@@ -11,7 +10,8 @@
     z-index: 5;
     width: 100vw;
     height: 100vh;
-    background-color: var(--grey-6);
+    overflow: auto;
+    background-color: var(--secondary-bg);
     left: -100vh;
     transition-duration: 0.3s;
     font-family: 'Inter', sans-serif;
@@ -32,7 +32,7 @@
 
 .context-menu__block {
   padding: 24px 16px;
-  border-top: 1px solid var(--grey-2);
+  border-top: 1px solid var(--secondary-border-color);
 }
 
 @media (min-width: 600px) {
@@ -59,13 +59,13 @@
 .context-menu__title {
   font-size: 20px;
   line-height: 26px;
-  color: var(--grey-3);
+  color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
 
 @media (min-width: 600px) {
   .context-menu--components .context-menu__title {
-    color: var(--black);
+    color: var(--main-text-color);
   }
 }
 
@@ -90,7 +90,7 @@
 .context-menu__link {
   font-size: 16px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--main-text-color);
 }
 
 .context-menu__link--active {

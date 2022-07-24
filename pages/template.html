@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <title>Сomponent page</title>
+  <link rel="stylesheet" href="../components/code.css">
+  <title>Accordion</title>
 </head>
 
 <body class="content">
@@ -14,9 +15,25 @@
       <button class="header__toggler-mobile-menu">
         <span class="header__toggler-mobile-menu-icon"></span>
       </button>
-      <svg class="header__icon">
-        <use href="../assets/icons/sprite.svg#header-icon">
-      </svg>
+      <div class="header__wrapper">
+        <a class="header__icon" href="../index.html">
+          <svg class="header__img">
+            <use href="../assets/icons/sprite.svg#header-icon">
+          </svg>
+        </a>
+        <div class="header__theme">
+          <svg class="header__theme-icon header__theme-icon--sun">
+            <use href="../assets/icons/sprite.svg#sun-icon">
+          </svg>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+          <svg class="header__theme-icon header__theme-icon--moon">
+            <use href="../assets/icons/sprite.svg#moon-icon">
+          </svg>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main-content">
@@ -28,7 +45,7 @@
               <div class="context-menu__theme-toggler theme-toggler">
                 <p class="theme-toggler__text">Dark mode</p>
                 <label class="toggler toggler--theme">
-                  <input class="toggler__input visually-hidden" type="checkbox" name="not">
+                  <input class="toggler__input visually-hidden js-theme" type="checkbox" name="not">
                   <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
                 </label>
               </div>
@@ -37,13 +54,16 @@
               <p class="context-menu__title">Complex</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Button</a>
+                  <a href="./button.html" class="context-menu__link">Button</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Tooltip</a>
+                  <a href="./tooltip.html" class="context-menu__link">Tooltip</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Avatar</a>
+                  <a href="./avatar.html" class="context-menu__link">Avatar</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./form-elements.html" class="context-menu__link">Custom form elements</a>
                 </li>
               </ul>
             </div>
@@ -51,16 +71,19 @@
               <p class="context-menu__title">Simple</p>
               <ul class="context-menu__list">
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Skeleton</a>
+                  <a href="./skeleton.html" class="context-menu__link">Skeleton</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link context-menu__link--active">Histogram</a>
+                  <a href="./histogram.html" class="context-menu__link">Histogram</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Calendar</a>
+                  <a href="./calendar.html" class="context-menu__link">Calendar</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="" class="context-menu__link">Accordion</a>
+                  <a href="./accordion.html" class="context-menu__link context-menu__link--active">Accordion</a>
+                </li>
+                <li class="context-menu__item">
+                  <a href="./modal.html" class="context-menu__link">Modal</a>
                 </li>
                 <li class="context-menu__item context-menu__item--main-page">
                   <a href="../index.html" class="context-menu__link">Main page</a>
@@ -69,58 +92,38 @@
             </div>
           </nav>
           <div class="components__block">
-            <h2 class="components__title">Histogram</h2>
+            <h2 class="components__title">Accordion</h2>
             <div class="components__element">
-              <div class="histogram histogram--component">
-                <div class="histogram__inner">
-                  <div class="histogram__orders">
-                    <p class="histogram__orders-title">Total orders</p>
-                    <p class="histogram__number">50254</p>
-                  </div>
-                  <a class="histogram__link" href="#">View all</a>
-                </div>
-                <div class="histogram__schedule">
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                  <div class="histogram__schedule-item" style="height: 66%"></div>
-                  <div class="histogram__schedule-item" style="height: 100%"></div>
-                  <div class="histogram__schedule-item" style="height: 30%"></div>
-                  <div class="histogram__schedule-item" style="height: 50%"></div>
-                  <div class="histogram__schedule-item" style="height: 90%"></div>
-                  <div class="histogram__schedule-item" style="height: 15%"></div>
-                </div>
+              <div class="accordion">
+                <details class="accordion__item">
+                  <summary class="accordion__title">
+                    Accordion item 1
+                  </summary>
+                  <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__title">
+                    Accordion item 2
+                  </summary>
+                  <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__title">
+                    Accordion item 3
+                  </summary>
+                  <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </details>
               </div>
             </div>
-            <label class="checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="not">
-              <span class="checkbox__label">Default</span>
-            </label>
-            <label class="toggler">
-              <input class="toggler__input visually-hidden" type="checkbox" name="not">
-              <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
-            </label>
             <div class="components__code">
               <div class="tabs">
                 <input class="tabs__input tabs__input--html visually-hidden" name="code" type="radio" id="#html-tab"
@@ -137,163 +140,96 @@
                     </li>
                   </ul>
                 </div>
-
                 <div class="tabs__content tabs__content--html">
                   <pre class="components__code-example">
-                    
-&lt;div class=&quot;histogram&quot;&gt;
-  &lt;div class=&quot;histogram__inner&quot;&gt;
-    &lt;div class=&quot;histogram__orders&quot;&gt;
-      &lt;p class=&quot;histogram__orders-title&quot;&gt;Total orders&lt;/p&gt;
-      &lt;p class=&quot;histogram__number&quot;&gt;50254&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot;&gt;View all&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;histogram__schedule&quot;&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 66%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;histogram__schedule-item&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+                    <code data-simplebar class="prettyprint">              
+&lt;div class="accordion"&gt;
+  &lt;details class="accordion__item"&gt;
+    &lt;summary class="accordion__title"&gt;
+      Accordion item 1
+    &lt;/summary&gt;
+    &lt;p class="accordion__text"&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class="accordion__item"&gt;
+    &lt;summary class="accordion__title"&gt;
+      Accordion item 2
+    &lt;/summary&gt;
+    &lt;p class="accordion__text"&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class="accordion__item"&gt;
+    &lt;summary class="accordion__title"&gt;
+      Accordion item 3
+    &lt;/summary&gt;
+    &lt;p class="accordion__text"&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
 &lt;/div&gt;
-                  </code></pre>
+                    </code>
+                  </pre>
                 </div>
                 <div class="tabs__content tabs__content--css">
-                  <pre class="components__code-example"><code>
-.histogram {
+                  <pre class="components__code-example">
+                    <code class="code prettyprint">
+.accordion {
   width: 100%;
-  padding: 16px 24px 24px;
-  border: 1px solid var(--grey-3);
+}
+
+.accordion__item {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main-text-color);
+  box-sizing: border-box;
+  display: block;
+  padding: 24px 32px;
+  margin-bottom: 8px;
+  border: 1px solid var(--main-border-color);
   border-radius: 8px;
 }
 
-.histogram--preview {
-  max-width: 600px;
-  pointer-events: none;
+.accordion__item:last-child {
+  margin-bottom: 0;
 }
 
-.histogram--component {
-  max-width: 500px;
-}
-
-@media (max-width: 400px) {
-  .histogram--preview {
-    padding: 8px 12px 12px;
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    width: 100%;
-    max-width: 200px;
-  }
-}
-
-.histogram__inner {
+.accordion__title {
+  list-style: none;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
+  align-items: center;
 }
 
-@media (max-width: 400px) {
-  .histogram--preview .histogram__inner {
-    margin-bottom: 15px;
-  }
+.accordion__title::-webkit-details-marker {
+  display: none;
 }
 
-.histogram__orders {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  color: var(--black);
+.accordion__title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 18px;
+  height: 10px;
+  background-image: url("../assets/images/Vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
-.histogram__orders-title {
-  font-size: 16px;
-  line-height: 24px;
-  opacity: 0.8;
-  margin-bottom: 6px;
-}
-
-@media (max-width: 400px) {
-  .histogram--preview .histogram__orders-title {
-    font-size: 8px;
-    line-height: 12px;
-    opacity: 0.8;
-    margin-bottom: 6px;
-  }
-}
-
-.histogram__number {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-
-@media (max-width: 400px) {
-  .histogram--preview .histogram__number {
-    font-size: 10px;
-    line-height: 13px;
-  }
-}
-
-.histogram__link {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--blue);
-}
-
-@media (max-width: 400px) {
-  .histogram--preview .histogram__link {
-    font-size: 8px;
-    line-height: 12px;
-  }
-}
-
-.histogram__schedule {
-  display: flex;
-  align-items: flex-end;
-  gap: 1px;
-  height: 50px;
-}
-
-@media (max-width: 400px) {
-  .histogram--preview .histogram__schedule {
-    height: 25px;
-  }
-}
-
-.histogram__schedule-item {
-  flex: auto;
-  background-color: var(--blue);
-}
-                  </code></pre>
+.accordion__item[open] .accordion__title::before {
+  transform: rotate(-180deg);
+}                
+                    </code>
+                  </pre>
                 </div>
               </div>
             </div>
@@ -309,10 +245,9 @@
       </p>
     </div>
   </footer>
-
-  <script src="../assets/js/menu.js"></script>
-  <script src="./assets/js/preload.js"></script>
-
+  <script type="module" src="../assets/js/main.js"></script>
+  <script src="../assets/js/simpleber.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </body>
 
 </html>
