@@ -1,7 +1,7 @@
 .histogram {
   width: 100%;
   padding: 16px 24px 24px;
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--rare-border-color);
   border-radius: 8px;
 }
 
@@ -17,7 +17,6 @@
 @media (max-width: 400px) {
   .histogram--preview {
     padding: 8px 12px 12px;
-    border: 1px solid var(--grey-3);
     border-radius: 8px;
     width: 100%;
     max-width: 200px;
@@ -40,7 +39,7 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: var(--black);
+  color: var(--main-text-color);
 }
 
 .histogram__orders-title {

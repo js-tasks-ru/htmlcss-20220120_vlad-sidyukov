@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../components/code.css">
-  <title>Accordion</title>
+  <title>Modal</title>
 </head>
 
 <body class="content">
@@ -80,10 +80,10 @@
                   <a href="./calendar.html" class="context-menu__link">Calendar</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="./accordion.html" class="context-menu__link context-menu__link--active">Accordion</a>
+                  <a href="./accordion.html" class="context-menu__link">Accordion</a>
                 </li>
                 <li class="context-menu__item">
-                  <a href="./modal.html" class="context-menu__link">Modal</a>
+                  <a href="./modal.html" class="context-menu__link context-menu__link--active">Modal</a>
                 </li>
                 <li class="context-menu__item context-menu__item--main-page">
                   <a href="../index.html" class="context-menu__link">Main page</a>
@@ -92,36 +92,24 @@
             </div>
           </nav>
           <div class="components__block">
-            <h2 class="components__title">Accordion</h2>
+            <h2 class="components__title">Modal</h2>
             <div class="components__element">
-              <div class="accordion">
-                <details class="accordion__item">
-                  <summary class="accordion__title">
-                    Accordion item 1
-                  </summary>
-                  <p class="accordion__text">
+              <button class="button button--primary js-button">
+                Open modal
+              </button>
+              <div class="modal">
+                <div class="modal__window">
+                  <h3 class="modal__title">
+                    Modal title
+                  </h3>
+                  <p class="modal__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
                     velit mollit. Exercitation veniam consequat sunt nostrud amet.
                   </p>
-                </details>
-                <details class="accordion__item">
-                  <summary class="accordion__title">
-                    Accordion item 2
-                  </summary>
-                  <p class="accordion__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </details>
-                <details class="accordion__item">
-                  <summary class="accordion__title">
-                    Accordion item 3
-                  </summary>
-                  <p class="accordion__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </details>
+                  <button class="modal__close"></button>
+                </div>
               </div>
             </div>
             <div class="components__code">
@@ -140,37 +128,20 @@
                     </li>
                   </ul>
                 </div>
+
                 <div class="tabs__content tabs__content--html">
                   <pre class="components__code-example">
-                    <code data-simplebar class="prettyprint">              
-&lt;div class="accordion"&gt;
-  &lt;details class="accordion__item"&gt;
-    &lt;summary class="accordion__title"&gt;
-      Accordion item 1
-    &lt;/summary&gt;
-    &lt;p class="accordion__text"&gt;
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    <code data-simplebar class="prettyprint">    
+&lt;div class="modal"&gt;
+  &lt;div class="modal__window"&gt;
+    &lt;h3 class="modal__title"&gt;
+      Modal title
+    &lt;/h3&gt;
+    &lt;p class="modal__text"&gt;
+     Text
     &lt;/p&gt;
-  &lt;/details&gt;
-  &lt;details class="accordion__item"&gt;
-    &lt;summary class="accordion__title"&gt;
-      Accordion item 2
-    &lt;/summary&gt;
-    &lt;p class="accordion__text"&gt;
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-      velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    &lt;/p&gt;
-  &lt;/details&gt;
-  &lt;details class="accordion__item"&gt;
-    &lt;summary class="accordion__title"&gt;
-      Accordion item 3
-    &lt;/summary&gt;
-    &lt;p class="accordion__text"&gt;
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-      velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    &lt;/p&gt;
-  &lt;/details&gt;
+    &lt;button class="modal__close"&gt;&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
                     </code>
                   </pre>
@@ -178,55 +149,64 @@
                 <div class="tabs__content tabs__content--css">
                   <pre class="components__code-example">
                     <code data-simplebar class="prettyprint">
-.accordion {
-  width: 100%;
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(196, 196, 196, 0.5);
 }
 
-.accordion__item {
+.modal__open {
+  width: auto;
+}
+
+.modal__window {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  position: relative;
+  width: 100%;
+  max-width: 428px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  background-color: var(--white);
+  overflow: auto;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blue-2);
+  margin-bottom: 14px;
+}
+
+.modal__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: var(--main-text-color);
-  box-sizing: border-box;
-  display: block;
-  padding: 24px 32px;
-  margin-bottom: 8px;
-  border: 1px solid var(--main-border-color);
-  border-radius: 8px;
+  color: var(--grey-4);
 }
 
-.accordion__item:last-child {
-  margin-bottom: 0;
-}
-
-.accordion__title {
-  list-style: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.accordion__title::-webkit-details-marker {
-  display: none;
-}
-
-.accordion__title::before {
-  content: "";
+.modal__close {
   position: absolute;
-  right: 0;
-  width: 18px;
-  height: 10px;
-  background-image: url("../assets/images/Vector.svg");
+  top: 15px;
+  right: 15px;
+  width: 9px;
+  height: 9px;
+  background-image: url("./img/Group.svg");
   background-position: center;
   background-repeat: no-repeat;
-  transition-duration: 0.3s;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-}
-
-.accordion__item[open] .accordion__title::before {
-  transform: rotate(-180deg);
 }                
                     </code>
                   </pre>

@@ -1,10 +1,14 @@
-// Меню бургер
-const buttonMenu = document.querySelector('.header__toggler-mobile-menu');
-const menuBody = document.querySelector('.context-menu');
-if (buttonMenu) {
-  buttonMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle('content--lock');
-    menuBody.classList.toggle('context-menu--active');
-    buttonMenu.classList.toggle('header__toggler-mobile-menu--active');
-  });
+const contextMenuButton = document.querySelector('.header__toggler-mobile-menu');
+const contextMenu = document.querySelector('.context-menu');
+
+function clickButtonMenuHandler() {
+  if (contextMenuButton) {
+    contextMenuButton.addEventListener("click", function () {
+      document.documentElement.classList.toggle('content--lock');
+      contextMenu.classList.toggle('context-menu--active');
+      contextMenuButton.classList.toggle('header__toggler-mobile-menu--active');
+    });
+  }
 }
+
+export {clickButtonMenuHandler}

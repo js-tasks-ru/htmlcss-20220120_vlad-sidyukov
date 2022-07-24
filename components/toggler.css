@@ -11,7 +11,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--radio-text-color);
   user-select: none;
 }
 
@@ -26,17 +26,17 @@
 .toggler__label::before {
   content: "";
   display: block;
+  margin-right: 12px;
   width: 52px;
   height: 28px;
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
-  margin: 0 12px 0 0;
   transition-duration: 0.3s;
 }
 
 .toggler--theme .toggler__label::before {
-  margin: 0;
+  margin-right: 0;
 }
 
 .toggler__input:checked + .toggler__label::before {
@@ -69,5 +69,9 @@
   background-color: var(--grey-3);
   opacity: 0.25;
 }
+
+
+
+
 
 

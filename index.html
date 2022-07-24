@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Главная страница -->
+
 <html class="page" lang="en">
 
 <head>
@@ -14,9 +14,23 @@
       <button class="header__toggler-mobile-menu">
         <span class="header__toggler-mobile-menu-icon"></span>
       </button>
-      <svg class="header__icon">
-        <use href="./assets/icons/sprite.svg#header-icon">
-      </svg>
+      <div class="header__wrapper">
+        <svg class="header__icon">
+          <use href="./assets/icons/sprite.svg#header-icon">
+        </svg>
+        <div class="header__theme">
+          <svg class="header__theme-icon header__theme-icon--sun">
+            <use href="./assets/icons/sprite.svg#sun-icon">
+          </svg>
+          <label class="toggler toggler--theme">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" name="theme-header">
+            <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
+          </label>
+          <svg class="header__theme-icon header__theme-icon--moon">
+            <use href="./assets/icons/sprite.svg#moon-icon">
+          </svg>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -26,7 +40,7 @@
         <div class="context-menu__theme-toggler theme-toggler">
           <p class="theme-toggler__text">Dark mode</p>
           <label class="toggler toggler--theme">
-            <input class="toggler__input visually-hidden" type="checkbox" name="not">
+            <input class="toggler__input visually-hidden js-theme" type="checkbox" id="theme-changer" name="theme-menu">
             <span class="toggler__label"><span class="visually-hidden">Dark mode</span></span>
           </label>
         </div>
@@ -63,14 +77,17 @@
           <li class="context-menu__item">
             <a href="./pages/accordion.html" class="context-menu__link">Accordion</a>
           </li>
+          <li class="context-menu__item">
+            <a href="./pages/modal.html" class="context-menu__link">Modal</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <h1 class="title">
-        Reusable component library
-      </h1>
-    </div>
+    <h1 class="title">
+      <div class="container">
+      Reusable component library
+      </div>
+    </h1>
     <div class="tabs">
       <input class="tabs__input tabs__input--all visually-hidden" type="radio" id="#all-tab" name="tabs" checked>
       <input class="tabs__input tabs__input--complex visually-hidden" type="radio" id="#complex-tab" name="tabs">
@@ -113,6 +130,26 @@
                     </div>
                   </div>
                   <p class="card__title">Skeleton</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
+                <a href="./pages/modal.html" class="card__link">
+                  <div class="card__component">
+                    <div class="modal modal--preview">
+                      <div class="modal__window">
+                        <h3 class="modal__title">
+                          Modal title
+                        </h3>
+                        <p class="modal__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                          velit
+                        </p>
+                        <button class="modal__close"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Modal</p>
                   <p class="card__subtitle">Container</p>
                 </a>
               </div>
@@ -425,6 +462,26 @@
                 </a>
               </div>
               <div class="preview__card card">
+                <a href="./pages/modal.html" class="card__link">
+                  <div class="card__component">
+                    <div class="modal modal--preview">
+                      <div class="modal__window">
+                        <h3 class="modal__title">
+                          Modal title
+                        </h3>
+                        <p class="modal__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                          velit
+                        </p>
+                        <button class="modal__close"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card__title">Modal</p>
+                  <p class="card__subtitle">Container</p>
+                </a>
+              </div>
+              <div class="preview__card card">
                 <a href="./pages/histogram.html" class="card__link">
                   <div class="card__component">
                     <div class="histogram histogram--preview">
@@ -572,8 +629,7 @@
     </div>
   </footer>
 
-  <script src="./assets/js/menu.js"></script>
-  <script src="./assets/js/preload.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 
 </body>
 
